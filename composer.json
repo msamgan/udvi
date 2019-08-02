@@ -2,7 +2,7 @@
     "name": "msamgan/udvi",
     "description": "laravel package to handel uuids",
     "type": "library",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [
         {
             "name": "msamgan",
