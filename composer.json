@@ -1,14 +1,19 @@
 {
-    "name": "samgan-khan/udvi",
+    "name": "msamgan/udvi",
     "description": "laravel package to handel uuids",
     "type": "library",
     "license": "MIT License",
     "authors": [
         {
-            "name": "samgan-khan",
+            "name": "msamgan",
             "email": "mohdsamgankhan@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "msamgan\\udvi\\": "src"
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
