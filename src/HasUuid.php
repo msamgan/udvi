@@ -9,7 +9,8 @@ trait HasUuid
     public static function bootHasUuid()
     {
         static::creating(function (Model $model) {
-            $model->uuid = $model->generateUuid();
+            $uuidKey = $model->getUuidKey();
+            $model->$uuidKey = $model->generateUuid();
         });
     }
 
@@ -19,5 +20,13 @@ trait HasUuid
     public function generateUuid()
     {
         return Str::uuid();
+    }
+
+    /**
+     * @return string
+     */
+    public function getUuidKey()
+    {
+        return 'uuid';
     }
 }
